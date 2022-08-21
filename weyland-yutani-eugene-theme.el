@@ -1,4 +1,4 @@
-;;; weyland-yutani-theme.el --- Emacs theme based off Alien movie franchise -*- lexical-binding:t -*-
+;;; weyland-yutani-eugene-theme.el --- Emacs theme based off Alien movie franchise -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2020 , Joe Staursky
 
@@ -33,7 +33,7 @@
 
 ;;; Code:
 
-(deftheme weyland-yutani)
+(deftheme weyland-yutani-eugene)
 
 (defun weyland-yutani-theme-face-specifier (&rest L)
   "Simplifies face specifications.
@@ -145,7 +145,7 @@ the parenthetical noise."
 
   (apply
    'custom-theme-set-faces
-   'weyland-yutani
+   'weyland-yutani-eugene
    (weyland-yutani-theme-face-specifier
     ;; FACE                                    :foreground                       :background  :MISC
     `(default                                  :foreground ,fg
@@ -388,14 +388,11 @@ the parenthetical noise."
       :inherit fixed-pitch)
     ;; DONE
     `(org-level-1                              :foreground ,HarlequinGreen
-      :bold t
-      :height 1.3)
+      :bold t)
     `(org-level-2                              :foreground ,IcebergBlue
-      :bold t
-      :height 1.2)
+      :bold t)
     `(org-level-3                              :foreground ,ArcticBlue
-      :bold t
-      :height 1.1)
+      :bold t)
     `(org-level-4                              :foreground ,Violet)
     `(org-level-5                              :foreground ,Indigo)
     `(org-level-6                              :foreground ,Magenta)
@@ -446,11 +443,7 @@ the parenthetical noise."
       :inherit default)
     `(org-link
       :inherit link)
-    `(org-todo                                 :foreground ,Yellow
-      :underline t
-      :bold t
-      :italic t
-      :height 1.1)
+    `(org-todo                                 :foreground ,HarlequinGreen)
     `(org-done
       :foreground "#7cc742" ; <= VERY slight difference to HarlequinGreen—but noticable, however not enough to warrant new color variable.
       :bold t)
@@ -790,9 +783,9 @@ the parenthetical noise."
                (file-name-as-directory (file-name-directory load-file-name))))
 
 
-(provide-theme 'weyland-yutani)
+(provide-theme 'weyland-yutani-eugene)
 
 ;; Shuts Package-Lint up.
-(provide 'weyland-yutani-theme)
+(provide 'weyland-yutani-eugene-theme)
 
 ;;; weyland-yutani-theme.el ends here
