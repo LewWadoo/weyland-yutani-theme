@@ -443,9 +443,9 @@ the parenthetical noise."
       :inherit default)
     `(org-link
       :inherit link)
-    `(org-todo                                 :foreground ,HarlequinGreen)
+    `(org-todo                                 :foreground ,vibrant-Yellow)
     `(org-done
-      :foreground "#7cc742" ; <= VERY slight difference to HarlequinGreen—but noticable, however not enough to warrant new color variable.
+      :foreground ,HarlequinGreen
       :bold t)
     `(org-agenda-done                          :foreground ,base7
       :bold t
